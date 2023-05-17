@@ -1,43 +1,53 @@
+const redis = require('../redis');
 const express = require('express');
-const { Todo } = require('../mongo')
+const { Todo } = require('../mongo');
 const router = express.Router();
 
 /* GET todos listing. */
-
 router.get('/:id', async (req, res) => {
   const id = req.params.id;
-  const data = await Todo.findById(id)
+  const data = await Todo.findById(id);
 
   res.send(data);
-})
+});
 
 router.get('/', async (_, res) => {
-  const todos = await Todo.find({})
+  const todos = await Todo.find({});
   res.send(todos);
 });
 
 /* POST todo to listing. */
 router.post('/', async (req, res) => {
-  const todo = await Todo.create({
-    text: req.body.text,
-    done: false
-  })
-  res.send(todo);
+  try {
+    const redisCounter = await redis.getAsync('todoCounter');
+    const todoCounter = !Number(redisCounter) ? 0 : Number(redisCounter); 
+
+    const todo = await Todo.create({
+      text: req.body.text,
+      done: false,
+    });
+
+    await redis.setAsync('todoCounter', todoCounter + 1);
+
+    res.send(todo);
+  } catch (error) {
+    res.sendStatus(400);
+  }
 });
 
 const singleRouter = express.Router();
 
 const findByIdMiddleware = async (req, res, next) => {
-  const { id } = req.params
-  req.todo = await Todo.findById(id)
-  if (!req.todo) return res.sendStatus(404)
+  const { id } = req.params;
+  req.todo = await Todo.findById(id);
+  if (!req.todo) return res.sendStatus(404);
 
-  next()
-}
+  next();
+};
 
 /* DELETE todo. */
 singleRouter.delete('/', async (req, res) => {
-  await req.todo.delete()  
+  await req.todo.delete();
   res.sendStatus(200);
 });
 
@@ -45,8 +55,8 @@ singleRouter.delete('/', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   const { id } = req.params;
   const deletedData = await Todo.findByIdAndDelete(id);
-  res.status(200).send(deletedData)
-})
+  res.status(200).send(deletedData);
+});
 
 /* GET todo. */
 singleRouter.get('/', async (req, res) => {
@@ -58,7 +68,6 @@ singleRouter.put('/', async (req, res) => {
   res.sendStatus(405); // Implement this
 });
 
-router.use('/:id', findByIdMiddleware, singleRouter)
-
+router.use('/:id', findByIdMiddleware, singleRouter);
 
 module.exports = router;
