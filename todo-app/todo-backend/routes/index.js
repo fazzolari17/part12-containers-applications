@@ -19,6 +19,9 @@ router.get('/', async (req, res) => {
 /* GET Statistics listing */ 
 router.get('/statistics', async (req, res) => {
   const redisCount = await redis.getAsync('todoCounter');
+  if (redisCount === null) {
+    await redis.setAsync('todoCounter', 0);
+  }
 
   res.send({ added_todos: redisCount })
 })
