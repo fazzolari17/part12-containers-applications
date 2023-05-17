@@ -3,6 +3,14 @@ const { Todo } = require('../mongo')
 const router = express.Router();
 
 /* GET todos listing. */
+
+router.get('/:id', async (req, res) => {
+  const id = req.params.id;
+  const data = await Todo.findById(id)
+
+  res.send(data);
+})
+
 router.get('/', async (_, res) => {
   const todos = await Todo.find({})
   res.send(todos);
@@ -32,6 +40,13 @@ singleRouter.delete('/', async (req, res) => {
   await req.todo.delete()  
   res.sendStatus(200);
 });
+
+/* DELETE individual todo by id */
+router.delete('/:id', async (req, res) => {
+  const { id } = req.params;
+  const deletedData = await Todo.findByIdAndDelete(id);
+  res.status(200).send(deletedData)
+})
 
 /* GET todo. */
 singleRouter.get('/', async (req, res) => {

@@ -5420,4 +5420,4 @@ zsh: command not found: run
 [0mGET /stylesheets/style.css [32m200 [0m2.170 ms - 111[0m
 [0mGET /favicon.ico [33m404 [0m11.415 ms - 942[0m
 ^C
-^Cç^C^C[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/tempDir[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 tempDir % [K[?2004h
+^Cç^C^C[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/tempDir[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 tempDir % [K[?2004hdocker run -p 3123:3000 express-server[38Drun it with docker run -p 3123:3000 express-server .[52D[12P[39C             [14D[38D                                      [38D
