@@ -1,0 +1,154 @@
+Script started on Wed May 17 12:45:45 2023
+Restored session: Wed May 17 12:45:07 EDT 2023
+/Users/giuseppefazzolari/.tmc-autocomplete.sh:44: command not found: complete
+/Users/giuseppefazzolari/.tmc-autocomplete.sh:44: command not found: complete
+[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/script-answers[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 script-answers % [K[?2004hlls [?2004l
+exercise12_1.txt	exercise12_2.txt	exercise12_3.txt	exercise12_4.txt	exercise12_8.txt
+[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/script-answers[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 script-answers % [K[?2004hccd ../
+[Jscript-answers/  todo-app/[A[0m[27m[24m[51Ccd ../[Ktodo-app[1m/[0m[0m/t
+[J[A[67Codo-
+[J[Jtodo-backend/   todo-frontend/[A[0m[27m[24m[51Ccd ../todo-app/todo-[Kbackend[1m/[0m[0m [?2004l
+[J[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/todo-app/todo-backend[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 todo-backend % [K[?2004hlls [?2004l
+Docker			app.js			docker-compose.yml	node_modules		redis			util
+Dockerfile		bin			mongo			package-lock.json	routes
+README.md		docker-compose.dev.yml	mongo_data		package.json		typescript
+[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/todo-app/todo-backend[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 todo-backend % [K[?2004hddocker container ls -s a [?2004l
+CONTAINER ID   IMAGE                    COMMAND                  CREATED             STATUS                           PORTS                                                                              NAMES
+1cb36d541d7e   nginx                    "/docker-entrypoint.…"   6 minutes ago       Up 6 minutes                     0.0.0.0:8080->80/tcp                                                               compassionate_perlman
+f4ed975a3d36   mongo                    "docker-entrypoint.s…"   23 minutes ago      Up 23 minutes                    0.0.0.0:3456->27017/tcp                                                            todo-backend-mongo-1
+c0ae32e1e5fb   todo-express-backend     "docker-entrypoint.s…"   About an hour ago   Exited (137) About an hour ago                                                                                      todo-backend-app-1
+540477a93a0b   todo-express-backend     "docker-entrypoint.s…"   2 hours ago         Exited (137) About an hour ago                                                                                      youthful_dirac
+5034616524e4   express-server           "docker-entrypoint.s…"   2 hours ago         Exited (130) 2 hours ago                                                                                            focused_johnson
+5bd79c988dc6   express-server           "docker-entrypoint.s…"   2 hours ago         Exited (130) 2 hours ago                                                                                            sharp_boyd
+ced88e1abca2   express-server           "docker-entrypoint.s…"   3 hours ago         Exited (137) 3 hours ago                                                                                            sad_jones
+f0ae08abb0d8   5b576d07c183             "docker-entrypoint.s…"   3 hours ago         Exited (130) 3 hours ago                                                                                            recursing_bohr
+ca31624ec59b   5b576d07c183             "docker-entrypoint.s…"   3 hours ago         Exited (137) 3 hours ago                                                                                            silly_leavitt
+d77afd7faa76   df62167f6a32             "docker-entrypoint.s…"   3 hours ago         Exited (254) 3 hours ago                                                                                            reverent_kapitsa
+d9b03612732c   df62167f6a32             "docker-entrypoint.s…"   23 hours ago        Exited (254) 23 hours ago                                                                                           recursing_chebyshev
+d637d3e96156   fs-hello-world           "docker-entrypoint.s…"   24 hours ago        Exited (130) 23 hours ago                                                                                           friendly_edison
+cf768b767a3c   fs-hello-world           "docker-entrypoint.s…"   24 hours ago        Exited (0) 24 hours ago                                                                                             recursing_aryabhata
+741561b82b1f   node:16                  "docker-entrypoint.s…"   24 hours ago        Exited (0) 24 hours ago                                                                                             quirky_gates
+86e9fb056698   hello-world-node         "bash"                   24 hours ago        Exited (0) 24 hours ago                                                                                             objective_gould
+3538b02fef23   46331d942d63             "/hello"                 25 hours ago        Exited (0) 25 hours ago                                                                                             interesting_hamilton
+37275b7de604   tiny-ale-db              "docker-entrypoint.s…"   6 weeks ago         Up 6 weeks                       0.0.0.0:3316->3306/tcp                                                             tiny-ale-db-1
+06475e7c1c6a   tiny-ale-ux              "docker-entrypoint.s…"   6 weeks ago         Up 6 weeks                       0.0.0.0:3011->3011/tcp, 0.0.0.0:7020->7020/tcp, 0.0.0.0:7357->7357/tcp, 4200/tcp   tiny-ale-ux-1
+d364383ad865   tiny-ale-web             "bash -c 'rm -f tmp/…"   6 weeks ago         Up 6 weeks                       3010/tcp, 0.0.0.0:3010->3000/tcp                                                   tiny-ale-web-1
+bc739ebb20bd   adminer                  "entrypoint.sh php -…"   6 weeks ago         Up 6 weeks                       0.0.0.0:3012->8080/tcp                                                             tiny-ale-adminer-1
+f2a1a0e01b86   getting-started          "docker-entrypoint.s…"   3 months ago        Created                                                                                                             wonderful_neumann
+b6e9dc62bed0   docker/getting-started   "/docker-entrypoint.…"   3 months ago        Exited (255) 7 weeks ago         0.0.0.0:80->80/tcp                                                                 sleepy_poitras
+3997e87e4647   ubuntu                   "bash"                   3 months ago        Exited (127) 3 months ago                                                                                           boring_torvalds
+f85c381a1274   29c05a5f5a3d             "docker-entrypoint.s…"   3 months ago        Exited (0) 3 months ago                                                                                             friendly_meninsky
+3ee4bac55524   29c05a5f5a3d             "docker-entrypoint.s…"   3 months ago        Exited (127) 3 months ago                                                                                           quirky_blackwell
+79f2751ecc57   29c05a5f5a3d             "docker-entrypoint.s…"   3 months ago        Exited (0) 3 months ago                                                                                             silly_northcutt
+95ecd75c13e1   29c05a5f5a3d             "docker-entrypoint.s…"   3 months ago        Exited (0) 3 months ago                                                                                             elegant_mayer
+31e8626bb70f   node:16                  "docker-entrypoint.s…"   3 months ago        Exited (127) 3 months ago                                                                                           hello-node
+674e0bf2b87e   hello-node-world         "bash"                   3 months ago        Exited (127) 3 months ago                                                                                           gallant_satoshi
+9635c062b296   ubuntu                   "bash"                   3 months ago        Exited (0) 3 months ago                                                                                             dreamy_panini
+c1a1df80267a   46331d942d63             "/hello"                 3 months ago        Exited (0) 3 months ago                                                                                             friendly_fermi
+[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/todo-app/todo-backend[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 todo-backend % [K[?2004hddocker exec -it [7mtodo-backend-mongo-1[27m[20D[27mt[27mo[27md[27mo[27m-[27mb[27ma[27mc[27mk[27me[27mn[27md[27m-[27mm[27mo[27mn[27mg[27mo[27m-[27m1 bash [?2004l
+[?2004hroot@f4ed975a3d36:/# ls 
+[?2004lbin  boot  data  dev  docker-entrypoint-initdb.d  etc  home  js-yaml.js  lib  media  mnt  opt  proc  root  run	sbin  srv  sys	tmp  usr  var
+[?2004hroot@f4ed975a3d36:/# mongosh 
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6465051533f48047034e08ae
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.2[0m
+Using MongoDB:		6.0.5
+[1m[33mUsing Mongosh[0m:		1.8.2
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the [1mdisableTelemetry()[0m command.
+
+[1G[0J [1G[1G[0Jtest> [7Gshow dbs
+Uncaught [1m[31mMongoServerError[0m: command listDatabases requires authentication
+[1G[0Jtest> [7G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jtest> [7G
+[?2004hroot@f4ed975a3d36:/# mongosh -u root f -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	646505607509560f9d2f1d94
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.2[0m
+Using MongoDB:		6.0.5
+[1m[33mUsing Mongosh[0m:		1.8.2
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-05-17T16:23:29.391+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1m[33m------[0m
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs 
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   72.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gls
+Uncaught [1m[31mReferenceError[0m: ls is not defined (Are you trying to run a script written for the legacy shell? Try running `snippet install mongocompat`)
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId("6464ff7ec0524129f2dd65b7"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("6464ff7ec0524129f2dd65b8"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insertOne({
+[1G[0J... [5Gtext: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone[33mdone[39m: fl[1G[0J... text: [32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m: f[65Gals[33mfalse[39m})
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("646505da7509560f9d2f1d95")
+}
+[1G[0Jthe_database> [15Gshow [1G[0Jthe_database> show[19G[1G[0Jthe_database> sho[18G[1G[0Jthe_database> sh[17G[1G[0Jthe_database> s[16G[1G[0Jthe_database> [15Gdb.todos.find({
+[1G[0J... [5G})
+[
+  {
+    _id: ObjectId("6464ff7ec0524129f2dd65b7"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("6464ff7ec0524129f2dd65b8"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("646505da7509560f9d2f1d95"),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jthe_database> [15G
+[?2004hroot@f4ed975a3d36:/# ^C[?2004l[?2004h[?2004l
+[?2004hroot@f4ed975a3d36:/# xit     exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                          ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications/todo-app/todo-backend[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 todo-backend % [K[?2004heexit [?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Wed May 17 12:52:03 2023
