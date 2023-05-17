@@ -1,0 +1,58 @@
+Script started on Tue May 16 11:40:34 2023
+Restored session: Tue May 16 11:40:10 EDT 2023
+/Users/giuseppefazzolari/.tmc-autocomplete.sh:44: command not found: complete
+/Users/giuseppefazzolari/.tmc-autocomplete.sh:44: command not found: complete
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004hddocker run -i [Ktt ubuntu bash           [K[A[79C[K[1B[K[A[79C  [?2004l[1Bdocker: 'ru' is not a docker command.
+See 'docker --help'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004hddocker run -i [Ktt ubuntu bash [?2004l
+[?2004h]0;root@31d7d38c3de6: /root@31d7d38c3de6:/# ls 
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;34mmedia[0m  [01;34mopt[0m   [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmnt[0m    [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
+[?2004h]0;root@31d7d38c3de6: /root@31d7d38c3de6:/# touch usr/
+bin/     include/ libexec/ sbin/    src/     
+games/   lib/     local/   share/   
+]0;root@31d7d38c3de6: /root@31d7d38c3de6:/# touch usr/
+bin/     include/ libexec/ sbin/    src/     
+games/   lib/     local/   share/   
+]0;root@31d7d38c3de6: /root@31d7d38c3de6:/# touch usr/x src/app                 cd usr/src/ao pp   
+[?2004l[?2004h]0;root@31d7d38c3de6: /usr/srcroot@31d7d38c3de6:/usr/src# ls 
+[?2004l[?2004h]0;root@31d7d38c3de6: /usr/srcroot@31d7d38c3de6:/usr/src# touch app/index.js
+[?2004ltouch: cannot touch 'app/index.js': No such file or directory
+[?2004h]0;root@31d7d38c3de6: /usr/srcroot@31d7d38c3de6:/usr/src# mkdir app 
+[?2004l[?2004h]0;root@31d7d38c3de6: /usr/srcroot@31d7d38c3de6:/usr/src# cd    touch app  /index.js 
+[?2004l[?2004h]0;root@31d7d38c3de6: /usr/srcroot@31d7d38c3de6:/usr/src# cd app/
+[?2004l[?2004h]0;root@31d7d38c3de6: /usr/src/approot@31d7d38c3de6:/usr/src/app# ls 
+[?2004lindex.js
+[?2004h]0;root@31d7d38c3de6: /usr/src/approot@31d7d38c3de6:/usr/src/app# exit 
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004h[7mdocker contai[7mn[7mer run --rm ubuntu ls.[27m[K[A[44C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27min[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27ml[27ms[27m.[?2004l
+docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "ls.": executable file not found in $PATH: unknown.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004h[7mdocker contai[7mn[7mer run --rm ubuntu ls.[27m[K[A[44C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27min[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27ml[27ms[27m.   
+[K[7mdocker container run --rm ubuntu ls.[27m[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27ml[27ms[27m.[?2004l
+docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "ls.": executable file not found in $PATH: unknown.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004h[7mdocker contai[7mn[7mer run --rm ubuntu ls.[27m[K[A[44C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27min[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27ml[27ms[27m.[1C. [1C s[?2004l
+bin
+boot
+dev
+etc
+home
+lib
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004hccontainers ls [K  c  [K[A[79C[K[1B[K[A[79C         c  [?2004l[1B[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004hccontainers ls [K  -a [?2004l
+zsh: command not found: containers
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004hccontainers ls [K  a[?2004l
+zsh: command not found: containers
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Giuseppes-MBP-1.home/Users/giuseppefazzolari/repository/fullStack_Containers/part12-containers-applications[0m[27m[24m[Jgiuseppefazzolari@Giuseppes-MBP-1 part12-containers-applications % [K[?2004hddocker contai [Knnrn [K[A[79C[K[1B[K[A[79C   
