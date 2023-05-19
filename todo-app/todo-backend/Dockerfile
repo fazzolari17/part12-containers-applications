@@ -2,12 +2,15 @@ FROM node:16
 
 USER node
   
-WORKDIR ./
+WORKDIR usr/src/app
 
 COPY --chown=node:node . .
 
-RUN npm ci 
+RUN npm ci --only=production
 
-ENV DEBUG=todo-backend:*
+# ENV DEBUG=todo-backend:*
+# ENV PORT=3001
 
-CMD npm start
+USER node
+
+CMD ["npm", "start"]
