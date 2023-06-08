@@ -1,0 +1,47 @@
+@PORT= 3001
+@token=bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvb3RAZ21haWwuY29tIiwiaWQiOiI2M2YwNTkzYjQxMjI3M2RjNDg2MTMwNjMiLCJpYXQiOjE2Nzc0MjE2NjEsImV4cCI6MTY3NzUwODA2MX0.Iu_8AaSLN-t-OgsWkBYZnPfDSvmQT7SGlLh1QIaZm1E
+
+# This needs to be the patient id and not the user's id!
+@id=63f59293ab81d6526c015236
+
+# Get all patients
+GET http://localhost:{{PORT}}/api/patients
+Authorization: {{token}}
+
+# Get individual patient information
+###
+GET http://localhost:{{PORT}}/api/patients/{{id}}
+Authorization: {{token}}
+
+
+###
+POST http://localhost:{{PORT}}/api/patients
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "name": "Giuseppe Fazzolari",
+  "dateOfBirth": "1985-11-29",
+  "ssn": "123-11-111",
+  "occupation": "Software Engineer",
+  "gender": "male",
+  "entries": []
+}
+
+# Add Entries to patients
+###
+PUT http://localhost:{{PORT}}/api/patients/{{id}}/entries
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+  "type": "Hospital",
+  "date": "1985-11-29",
+  "description": "description",
+  "specialist": "House MD",
+  "discharge": { 
+    "date": "2023-02-21", 
+    "criteria": "Learn" 
+    },
+  "diagnosesCodes": [ "M51.2", "J10.1" ]
+}
